@@ -1,0 +1,13 @@
+{
+    "name": "Freelancer Bidder",
+    "version": "1.1",
+    "description": "Bid On Projects",
+    "manifest_version": 3,
+    "permissions": ["tabs", "*://*.freelancer.com/*"],
+    "content_scripts": [
+      {
+        "matches": ["*://*.freelancer.com/*"],
+        "js": ["jquery.js", "background.js"]
+      }
+    ]
+  }
